@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="upload.php" method="post"encrype="multipart/form-data"><!--multipart/form-date is used to declare the type of date(jpeg,png,jpg etc)-->
+        <label>Select an image to upload</label>
+        <input type="file" name="filetoupload" id=""filetoupload><!--taking the file as an input-->
+        <br/>
+        <input type="submit" value="uploading image" name="submit"><!--on submiting we will be directed to php file ehere thimage verification takes place-->
+    </form>
+</body>
+</html>
