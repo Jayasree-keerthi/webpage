@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" src="style.css">
+    <title>Login form</title>
+    <script language="javascript">  //writing java script function to validate the registration form
+        function authentication(){
+        var n=document.getElementById("t1").value;
+        var p=document.getElementById("t2").value;
+        var e=document.getElementById("t3").value;
+        var ph=document.getElementById("t4").value;
+        if(n==null)
+        {
+            alert("enter the valid name");
+        }
+        if(p.length()<6||p==" ")
+        {
+            alert("enter valid phone number");
+        }
+        if(e==null||!e.includes"@")
+        {
+            alert("enter valid mail.id");
+        }
+        if(ph.length<10)
+        {
+            alert("enter valid phone number")
+        }
+    }
+    </script>
+    <style>
+        .a{
+            justify-content: center;
+            border: 1pc red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+    <body id="a">
+        <form action="submission.html" ><!--when you click submit the page is redirect to submission.html page-->
+            <table border:"0">
+                <tr>
+                    <b>
+                        <td>Name</td>
+                        </td>
+                    </b>
+                    <td colspan="3">
+                        <input type="text" name="t1" value=" "/>
+                    </td>
+                </tr>
+                <tr>
+                    
+                        <td>Password</td>
+                        </td>
+                    
+                    <td colspan="3">
+                        <input type="password" name="t2" value=" "/>
+                    </td>
+                </tr>
+                <tr>
+                    <b>
+                        <td>Email id</td>
+                        </td>
+                    </b>
+                    <td colspan="3">
+                        <input type="text" name="t3" value=" "/>
+                    </td>
+                </tr>
+                <tr>
+                    <b>
+                        <td>Phone Number</td>
+                        </td>
+                    </b>
+                    <td colspan="3">
+                        <input type="text" name="t4" value=" "/>
+                    </td>
+                </tr>
+                <tr>
+                    <b>
+                        <td>Gender</td>
+                        </td>
+                    </b>
+                    <td colspan="3">
+                        <input type="radio" name="r" value="male"/>Male
+                        <input type="radio" name="r" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <b>
+                        <td>DOB</td>
+                        </td>
+                    </b>
+                    <td>
+                        <select name="d">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="m">
+                            <option>jan</option>
+                            <option>feb</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="y">
+                            <option>1990</option>
+                            <option>1992</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="4">language known:</td>
+                    <td colspan="3"> 
+                        <input type="checkbox" name="c1" value="eng"/>English
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"> 
+                        <input type="checkbox" name="c2" value="telugu"/>Telugu
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"> 
+                        <input type="checkbox" name="c3" value="hindi"/>Hindi
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"> 
+                        <input type="checkbox" name="c4" value="tamil"/>Tamil
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea cols="35" rows="15" name="ta" ></textarea></td>
+                </tr>
+                <tr><td></td>
+                    <td colspan="3"><input type="submit" value="submit" onsubmit="authentication()"/>
+                        <input type="reset" value="reset"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
