@@ -1,0 +1,10 @@
+body{
+    justify-content: center;
+    border: 2px red;
+    margin: auto;
+    background-color: rgb(0, 191, 255);
+    display: inline-table;
+}
+h1{
+    color: aquamarine;
+}
